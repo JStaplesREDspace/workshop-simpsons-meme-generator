@@ -1,11 +1,26 @@
 <script>
-  import Router from "svelte-spa-router";
-  import routes from "./routes";
+  import Meme from "./components/Meme.svelte";
+  import Credits from "./components/Credits.svelte";
+  import { getImage, getPhrase } from "../helpers";
+
+  let image = "";
+  let phrase = "";
+
+  const getMeme = async () => {
+    image = await getImage();
+    phrase = await getPhrase();
+    await getPhrase();
+    console.log("my meme image", image);
+  };
 </script>
 
 <main>
-  <Router {routes} />
+  <Meme src={image} text={phrase} alt="meme image"></Meme>
+  <button on:click={getMeme}>Get New Meme</button>
+
+  <Credits />
 </main>
+
 
 <style>
   :global(html),
