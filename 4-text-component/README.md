@@ -43,10 +43,18 @@ import Text from "./atoms/Text.svelte";
 
 - Let's inject our phrase into our new Text component! It is similar to what we did for the img -> src and alt properties! Change `<Text />` to say this instead:
 
-```html
-<Text text="{phrase}" />
+```js
+<Text text={phrase} />
 ```
 
 We can do this, because we wrote `export let phrase = "Hello World";`. The `export` keyword allows us to inject values into our component from outside!
+
+- Now, let's remove our div section, as we don't need it anymore. Remove the following:
+
+```js
+<div>
+  {@html phrase}
+</div>
+```
 
 > Don't forget to save (CTRL+S, CMD+S, or File>Save) and refresh the view using the refresh icon on the right!

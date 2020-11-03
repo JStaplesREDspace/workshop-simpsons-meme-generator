@@ -19,7 +19,7 @@ If we run this now, we should see our new credits component. But this one includ
 ```html
 <Credits>
   This Meme Generator was created by /put your name here/!
-</Credits
+</Credits>
 ```
 
 And we're done! I hope you had fun!

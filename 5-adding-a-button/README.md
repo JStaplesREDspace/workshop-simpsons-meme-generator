@@ -10,8 +10,8 @@ So we have the text. We have the image. But still no generating. It's time to ad
 
 - Now let's add some functionality to this button. Using Svelte, we can do the following to add a mouse click handler. Change the button to this:
 
-```html
-<button on:click="{getMeme}">Get New Meme</button>
+```js
+<button on:click={getMeme}>Get New Meme</button>
 ```
 
 This will use the `getMeme` method in the script section to handle whenever the button is clicked.

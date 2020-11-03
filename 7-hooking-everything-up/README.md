@@ -11,14 +11,14 @@ export let phrase = "Hello World!";
 
 - And pass the new image variable through to our Image component. Luckily, we've already exposed this variable, so we just need to hook it up! We can hook up the alt tag here if we want too. (BONUS!)
 
-```html
-<image src="{image}" alt="The Simpsons Image" />
+```js
+<Image src={image} alt="The Simpsons Image" />
 ```
 
 - Open up `Main.svelte` and use the variables we created last time to pass to our Meme component. `<Meme />` should be changed to this:
 
-```html
-<Meme image="{image}" phrase="{phrase}" />
+```js
+<Meme image={image} phrase={phrase} />
 ```
 
 - Finally, cross your fingers and save!! Hit that button and see if we get random The Simpsons Memes!

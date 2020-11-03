@@ -26,8 +26,8 @@ const getMeme = async () => {
 - But wait! Those variables don't exist yet! Well, let's make them! In the scripts section, underneath the `import` lines, let's create our variables:
 
 ```js
-export let image = "";
-export let phrase = "";
+let image = "";
+let phrase = "";
 ```
 
 - And finally, let's console log out our values so we can see what this data will look like by adding this to `getMeme`:
