@@ -14,6 +14,13 @@ If you fall behind, don't worry! You can borrow code from the current step, or s
 
 You can save your work by making an account here on https://codesandbox.io and saving your sandbox.
 
+## Navigate through the Steps
+
+> Add /#/? where the ? is the number you want to go to.
+
+If you are following along with the steps, just add `/#/?`, where the ? will be the step you want to work from in the view on the right.
+For example, your route might look like this: `https://4ubvd.csb.app/#/9`. Make sure the 5 random characters at the front of your url match the characters in your url in your web browser.
+
 ## Svelte
 
 Svelte is a framework that is used to generate websites. Other popular frameworks include: Vue, React, and Angular.

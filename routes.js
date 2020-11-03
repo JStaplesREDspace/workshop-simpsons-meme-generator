@@ -1,3 +1,4 @@
+import Main0 from "./0-sandbox/Main.svelte";
 import Main1 from "./1-start/Main.svelte";
 import Main2 from "./2-meme-component/Main.svelte";
 import Main3 from "./3-adding-an-image/Main.svelte";
@@ -9,7 +10,8 @@ import Main8 from "./8-giving-credit/Main.svelte";
 import Main9 from "./9-complete/Main.svelte";
 
 export default {
-  "/": Main1,
+  "/": Main0,
+  "/0": Main0,
   "/1": Main1,
   "/2": Main2,
   "/3": Main3,
